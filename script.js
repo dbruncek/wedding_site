@@ -1,26 +1,3 @@
-// ===== PASSWORD PROTECTION =====
-const PASSWORD = 'wedding2026';
-const overlay  = document.getElementById('password-overlay');
-const pwInput  = document.getElementById('password-input');
-const pwError  = document.getElementById('password-error');
-
-if (sessionStorage.getItem('wedding_auth') === 'true') {
-  overlay.classList.add('hidden');
-}
-
-document.getElementById('password-form').addEventListener('submit', e => {
-  e.preventDefault();
-  if (pwInput.value.trim() === PASSWORD) {
-    sessionStorage.setItem('wedding_auth', 'true');
-    overlay.classList.add('hidden');
-    pwError.textContent = '';
-  } else {
-    pwError.textContent = 'Incorrect password. Please try again.';
-    pwInput.value = '';
-    pwInput.focus();
-  }
-});
-
 // ===== COUNTDOWN TIMER =====
 function updateCountdown() {
   const wedding = new Date('2026-08-29T14:00:00');
