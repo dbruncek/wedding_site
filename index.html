@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,251 +11,30 @@
 </head>
 <body>
 
-  <!-- ===== NAVIGATION ===== -->
-  <nav>
-    <ul class="nav-links">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#venue">Venue</a></li>
-      <li><a href="#attire">Attire</a></li>
-      <li><a href="#registry">Registry</a></li>
-      <li><a href="#faq">FAQ</a></li>
-    </ul>
-  </nav>
+  <div class="page">
+    <div class="glow"></div>
 
-  <!-- ===== HERO ===== -->
-  <section id="hero">
-    <div class="hero-glow"></div>
-    <div class="floating-hearts" aria-hidden="true"></div>
+    <div class="content">
+      <p class="eyebrow">Prihaja kmalu</p>
 
-    <div class="hero-content">
-      <p class="hero-eyebrow">You are invited to celebrate</p>
-
-      <h1 class="hero-names">
+      <h1 class="names">
         Alenka
-        <span class="hero-ampersand">&amp;</span>
+        <span class="ampersand">&amp;</span>
         Domen
       </h1>
 
-      <p class="hero-date">August 29, 2026</p>
+      <p class="date">August 29, 2026</p>
 
-      <div class="hero-divider"><span>💕</span></div>
+      <div class="divider"><span>💕</span></div>
 
-      <div class="countdown" aria-label="Countdown to wedding">
-        <div class="countdown-box">
-          <span class="countdown-number" id="cd-days">—</span>
-          <span class="countdown-label">Days</span>
-        </div>
-        <div class="countdown-box">
-          <span class="countdown-number" id="cd-hours">—</span>
-          <span class="countdown-label">Hours</span>
-        </div>
-        <div class="countdown-box">
-          <span class="countdown-number" id="cd-minutes">—</span>
-          <span class="countdown-label">Minutes</span>
-        </div>
-        <div class="countdown-box">
-          <span class="countdown-number" id="cd-seconds">—</span>
-          <span class="countdown-label">Seconds</span>
-        </div>
+      <div class="days-box">
+        <span class="days-number" id="days-count">—</span>
+        <span class="days-label">dni do poroke</span>
       </div>
+
+      <p class="not-ready">Ta stran še ni dokončana — kmalu se vrni!</p>
     </div>
-  </section>
-
-  <!-- ===== VENUE ===== -->
-  <section id="venue">
-    <p class="section-eyebrow reveal">Save the Date</p>
-    <h2 class="section-title reveal">The Wedding Venue</h2>
-    <div class="section-divider reveal"><span>🏛️</span></div>
-    <p class="section-subtitle reveal">
-      We can't wait to celebrate with you. Here are the details for our special day.
-    </p>
-
-    <div class="cards-grid">
-      <div class="card venue-card reveal">
-        <span class="card-icon">💒</span>
-        <span class="venue-badge">Ceremony</span>
-        <h3>Ceremony Venue</h3>
-        <p style="margin-bottom:1rem;">Address coming soon.</p>
-        <div class="venue-detail"><span>🕐</span><span>Ceremony begins at 2:00 PM</span></div>
-        <div class="venue-detail"><span>📍</span><span>Address TBD</span></div>
-        <div class="venue-detail"><span>🚗</span><span>Complimentary parking available</span></div>
-      </div>
-
-      <div class="card venue-card reveal" style="transition-delay: 0.15s">
-        <span class="card-icon">🥂</span>
-        <span class="venue-badge">Reception</span>
-        <h3>Reception Venue</h3>
-        <p style="margin-bottom:1rem;">Address coming soon.</p>
-        <div class="venue-detail"><span>🕕</span><span>Reception begins at 6:00 PM</span></div>
-        <div class="venue-detail"><span>📍</span><span>Address TBD</span></div>
-        <div class="venue-detail"><span>🚗</span><span>Complimentary parking available</span></div>
-      </div>
-    </div>
-
-    <div class="map-placeholder reveal" style="margin-top:2.5rem;">
-      <span class="map-icon">🗺️</span>
-      <h3>Map Coming Soon</h3>
-      <p>Detailed directions and maps will be added once finalized.</p>
-    </div>
-  </section>
-
-  <!-- ===== ATTIRE ===== -->
-  <section id="attire">
-    <p class="section-eyebrow reveal">Look your best</p>
-    <h2 class="section-title reveal">Dress Code &amp; Attire</h2>
-    <div class="section-divider reveal"><span>👗</span></div>
-    <p class="section-subtitle reveal">
-      We want everyone to feel elegant and comfortable while celebrating with us.
-    </p>
-
-    <div class="cards-grid">
-      <div class="card reveal">
-        <span class="card-icon">🎩</span>
-        <h3>Dress Code</h3>
-        <p>Formal / Black Tie Optional. Think floor-length gowns, cocktail dresses, suits and ties, or tuxedos — whatever makes you feel your most elegant self.</p>
-      </div>
-
-      <div class="card attire-card reveal" style="transition-delay: 0.15s">
-        <span class="card-icon">🎨</span>
-        <h3>Colour Palette</h3>
-        <p>Our wedding colours are blush, sage green, and gold. Wearing these tones is a lovely touch — but absolutely not required!</p>
-        <div class="color-swatches" aria-label="Wedding colour swatches">
-          <div class="swatch" style="background:#f4c2c2;" data-label="Blush" title="Blush"></div>
-          <div class="swatch" style="background:#8b9e8a;" data-label="Sage"  title="Sage Green"></div>
-          <div class="swatch" style="background:#d4a574;" data-label="Gold"  title="Gold"></div>
-        </div>
-      </div>
-
-      <div class="card reveal" style="transition-delay: 0.3s">
-        <span class="card-icon">🌿</span>
-        <h3>Atmosphere</h3>
-        <p>Garden Elegance. Picture romantic florals, soft candlelight, and an open-air setting — a warm summer evening made for celebration.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== REGISTRY ===== -->
-  <section id="registry">
-    <p class="section-eyebrow reveal">Gift Registry</p>
-    <h2 class="section-title reveal">Celebrate With Us</h2>
-    <div class="section-divider reveal"><span>🎁</span></div>
-    <p class="section-subtitle reveal">
-      Your presence is the greatest gift. If you'd like to give something more, we're registered at the following:
-    </p>
-
-    <div class="registry-buttons reveal">
-      <a href="#" class="registry-btn primary">🛍️ Registry One</a>
-      <a href="#" class="registry-btn secondary">🛍️ Registry Two</a>
-    </div>
-
-    <div class="registry-note reveal">
-      <p>
-        We're also saving for our <strong>Honeymoon Fund</strong> — any contribution towards a dream start to our married life is deeply appreciated. 🌴
-      </p>
-    </div>
-  </section>
-
-  <!-- ===== FAQ ===== -->
-  <section id="faq">
-    <p class="section-eyebrow reveal">Questions?</p>
-    <h2 class="section-title reveal">Frequently Asked Questions</h2>
-    <div class="section-divider reveal"><span>💬</span></div>
-    <p class="section-subtitle reveal">
-      Here are answers to some common questions. Still have one? Reach out!
-    </p>
-
-    <div class="faq-list">
-
-      <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">
-          When should I arrive?
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Please plan to arrive at least 15–20 minutes before the ceremony begins so we can get started on time. The ceremony begins promptly at 2:00 PM.</p>
-        </div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">
-          Is there parking at the venues?
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Yes! Complimentary parking is available at both the ceremony and reception venues. Detailed directions will be shared closer to the date.</p>
-        </div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">
-          Can I bring a plus-one?
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Due to our venue capacity, we can only accommodate guests named on the invitation. If your invitation includes a plus-one, it will be noted on the envelope.</p>
-        </div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">
-          Are children welcome?
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>We love your little ones, but our wedding is an adults-only event (18+). We hope this gives you a chance to enjoy a relaxing evening out!</p>
-        </div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">
-          What food will be served?
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>We'll be serving a three-course dinner. Please indicate any dietary restrictions or allergies when you RSVP, and we'll do our best to accommodate everyone.</p>
-        </div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">
-          Will there be dancing?
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Absolutely! We'll have a live band and DJ with a full dance floor. Wear comfortable shoes for the reception — the dancing will go late into the night!</p>
-        </div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">
-          When is the RSVP deadline?
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Please RSVP by June 15, 2026. This helps us finalise catering and seating arrangements in time.</p>
-        </div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">
-          How can I reach you with more questions?
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Feel free to reach out to us directly via email or phone. We're happy to help with any questions you may have before the big day!</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <span class="footer-hearts">💕</span>
-    <h2>Alenka &amp; Domen</h2>
-    <p class="footer-date">August 29, 2026</p>
-    <p class="footer-msg">We can't wait to celebrate with you!</p>
-  </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
