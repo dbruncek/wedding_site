@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alenka &amp; Domen — August 29, 2026</title>
+  <title>Alenka &amp; Domen — 29. avgust 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
@@ -11,34 +11,13 @@
 </head>
 <body>
 
-  <!-- ===== PASSWORD OVERLAY ===== -->
-  <div id="password-overlay">
-    <div class="password-box">
-      <span class="hearts">💍</span>
-      <h1>Alenka &amp; Domen</h1>
-      <p>Enter the password to access our wedding site</p>
-      <form id="password-form">
-        <input
-          id="password-input"
-          type="password"
-          placeholder="Enter password"
-          autocomplete="off"
-          autofocus
-        />
-        <button type="submit">Enter ✨</button>
-        <span id="password-error" class="password-error" role="alert"></span>
-      </form>
-    </div>
-  </div>
-
   <!-- ===== NAVIGATION ===== -->
   <nav>
     <ul class="nav-links">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#venue">Venue</a></li>
-      <li><a href="#attire">Attire</a></li>
-      <li><a href="#registry">Registry</a></li>
-      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#hero">Domov</a></li>
+      <li><a href="#venue">Lokacija</a></li>
+      <li><a href="#attire">Oblačila</a></li>
+      <li><a href="#faq">Vprašanja</a></li>
     </ul>
   </nav>
 
@@ -48,7 +27,7 @@
     <div class="floating-hearts" aria-hidden="true"></div>
 
     <div class="hero-content">
-      <p class="hero-eyebrow">You are invited to celebrate</p>
+      <p class="hero-eyebrow">Vabljeni ste na praznovanje</p>
 
       <h1 class="hero-names">
         Alenka
@@ -56,26 +35,26 @@
         Domen
       </h1>
 
-      <p class="hero-date">August 29, 2026</p>
+      <p class="hero-date">29. avgust 2026</p>
 
       <div class="hero-divider"><span>💕</span></div>
 
-      <div class="countdown" aria-label="Countdown to wedding">
+      <div class="countdown" aria-label="Odštevalnik do poroke">
         <div class="countdown-box">
           <span class="countdown-number" id="cd-days">—</span>
-          <span class="countdown-label">Days</span>
+          <span class="countdown-label">Dni</span>
         </div>
         <div class="countdown-box">
           <span class="countdown-number" id="cd-hours">—</span>
-          <span class="countdown-label">Hours</span>
+          <span class="countdown-label">Ur</span>
         </div>
         <div class="countdown-box">
           <span class="countdown-number" id="cd-minutes">—</span>
-          <span class="countdown-label">Minutes</span>
+          <span class="countdown-label">Minut</span>
         </div>
         <div class="countdown-box">
           <span class="countdown-number" id="cd-seconds">—</span>
-          <span class="countdown-label">Seconds</span>
+          <span class="countdown-label">Sekund</span>
         </div>
       </div>
     </div>
@@ -83,186 +62,154 @@
 
   <!-- ===== VENUE ===== -->
   <section id="venue">
-    <p class="section-eyebrow reveal">Save the Date</p>
-    <h2 class="section-title reveal">The Wedding Venue</h2>
+    <p class="section-eyebrow reveal">Shranite datum</p>
+    <h2 class="section-title reveal">Lokacija poroke</h2>
     <div class="section-divider reveal"><span>🏛️</span></div>
     <p class="section-subtitle reveal">
-      We can't wait to celebrate with you. Here are the details for our special day.
+      Komaj čakava, da praznujeva z vami. Tukaj so podrobnosti za naš poseben dan.
     </p>
 
-    <div class="cards-grid">
+    <div class="cards-grid cards-grid--single">
       <div class="card venue-card reveal">
         <span class="card-icon">💒</span>
-        <span class="venue-badge">Ceremony</span>
-        <h3>Ceremony Venue</h3>
-        <p style="margin-bottom:1rem;">Address coming soon.</p>
-        <div class="venue-detail"><span>🕐</span><span>Ceremony begins at 2:00 PM</span></div>
-        <div class="venue-detail"><span>📍</span><span>Address TBD</span></div>
-        <div class="venue-detail"><span>🚗</span><span>Complimentary parking available</span></div>
+        <span class="venue-badge">Poroka &amp; Slavje</span>
+        <h3>Gostilna Livada</h3>
+        <div class="venue-details-group">
+          <div class="venue-detail"><span>🕐</span><span>Obred se začne ob 14:00</span></div>
+          <div class="venue-detail"><span>🥂</span><span>Slavje se začne ob 18:00</span></div>
+          <div class="venue-detail"><span>📍</span><span>Hladnikova 15, 1000 Ljubljana</span></div>
+          <div class="venue-detail"><span>🚗</span><span>Brezplačno parkirišče na voljo</span></div>
+        </div>
       </div>
-
-      <div class="card venue-card reveal" style="transition-delay: 0.15s">
-        <span class="card-icon">🥂</span>
-        <span class="venue-badge">Reception</span>
-        <h3>Reception Venue</h3>
-        <p style="margin-bottom:1rem;">Address coming soon.</p>
-        <div class="venue-detail"><span>🕕</span><span>Reception begins at 6:00 PM</span></div>
-        <div class="venue-detail"><span>📍</span><span>Address TBD</span></div>
-        <div class="venue-detail"><span>🚗</span><span>Complimentary parking available</span></div>
-      </div>
-    </div>
-
-    <div class="map-placeholder reveal" style="margin-top:2.5rem;">
-      <span class="map-icon">🗺️</span>
-      <h3>Map Coming Soon</h3>
-      <p>Detailed directions and maps will be added once finalized.</p>
     </div>
   </section>
 
   <!-- ===== ATTIRE ===== -->
   <section id="attire">
-    <p class="section-eyebrow reveal">Look your best</p>
-    <h2 class="section-title reveal">Dress Code &amp; Attire</h2>
+    <p class="section-eyebrow reveal">Izgledajte čim bolje</p>
+    <h2 class="section-title reveal">Dress code &amp; oblačila</h2>
     <div class="section-divider reveal"><span>👗</span></div>
     <p class="section-subtitle reveal">
-      We want everyone to feel elegant and comfortable while celebrating with us.
+      Želiva, da se vsi počutijo elegantno in udobno med praznovanjem z nama.
     </p>
 
     <div class="cards-grid">
       <div class="card reveal">
         <span class="card-icon">🎩</span>
-        <h3>Dress Code</h3>
-        <p>Formal / Black Tie Optional. Think floor-length gowns, cocktail dresses, suits and ties, or tuxedos — whatever makes you feel your most elegant self.</p>
+        <h3>Dress code</h3>
+        <p>Formalno / Black Tie opcijsko. Pomislite na dolge obleke, koktajl obleke, obleke s kravato ali smuking — karkoli, v čemer se počutite najbolj elegantno.</p>
       </div>
 
       <div class="card attire-card reveal" style="transition-delay: 0.15s">
         <span class="card-icon">🎨</span>
-        <h3>Colour Palette</h3>
-        <p>Our wedding colours are blush, sage green, and gold. Wearing these tones is a lovely touch — but absolutely not required!</p>
-        <div class="color-swatches" aria-label="Wedding colour swatches">
-          <div class="swatch" style="background:#f4c2c2;" data-label="Blush" title="Blush"></div>
-          <div class="swatch" style="background:#8b9e8a;" data-label="Sage"  title="Sage Green"></div>
-          <div class="swatch" style="background:#d4a574;" data-label="Gold"  title="Gold"></div>
+        <h3>Barvna paleta</h3>
+        <p>Naše poročne barve so temno zelena, bordo in črna. Srebrna je dobrodošla izključno za nakit in dodatke.</p>
+        <div class="color-swatches" aria-label="Poročne barve">
+          <div class="swatch" style="background:#1a4a2e;" data-label="Zelena" title="Temno zelena"></div>
+          <div class="swatch" style="background:#6b1a23;" data-label="Bordo" title="Bordo"></div>
+          <div class="swatch" style="background:#1a1a1a;" data-label="Črna" title="Črna"></div>
+          <div class="swatch swatch-silver" style="background:linear-gradient(135deg,#e8e8e8 25%,#c0c0c0 50%,#e8e8e8 75%);" data-label="Srebrna*" title="Srebrna — samo nakit"></div>
         </div>
+        <p class="swatch-note">* Srebrna samo za nakit in dodatke</p>
       </div>
 
       <div class="card reveal" style="transition-delay: 0.3s">
         <span class="card-icon">🌿</span>
-        <h3>Atmosphere</h3>
-        <p>Garden Elegance. Picture romantic florals, soft candlelight, and an open-air setting — a warm summer evening made for celebration.</p>
+        <h3>Vzdušje</h3>
+        <p>Vrtna eleganca. Predstavljajte si romantično cvetje, mehko svečavo in odprti prostor — topel poletni večer, ustvarjen za praznovanje.</p>
       </div>
     </div>
   </section>
 
-  <!-- ===== REGISTRY ===== -->
-  <section id="registry">
-    <p class="section-eyebrow reveal">Gift Registry</p>
-    <h2 class="section-title reveal">Celebrate With Us</h2>
-    <div class="section-divider reveal"><span>🎁</span></div>
-    <p class="section-subtitle reveal">
-      Your presence is the greatest gift. If you'd like to give something more, we're registered at the following:
-    </p>
-
-    <div class="registry-buttons reveal">
-      <a href="#" class="registry-btn primary">🛍️ Registry One</a>
-      <a href="#" class="registry-btn secondary">🛍️ Registry Two</a>
-    </div>
-
-    <div class="registry-note reveal">
-      <p>
-        We're also saving for our <strong>Honeymoon Fund</strong> — any contribution towards a dream start to our married life is deeply appreciated. 🌴
-      </p>
-    </div>
-  </section>
 
   <!-- ===== FAQ ===== -->
   <section id="faq">
-    <p class="section-eyebrow reveal">Questions?</p>
-    <h2 class="section-title reveal">Frequently Asked Questions</h2>
+    <p class="section-eyebrow reveal">Vprašanja?</p>
+    <h2 class="section-title reveal">Pogosta vprašanja</h2>
     <div class="section-divider reveal"><span>💬</span></div>
     <p class="section-subtitle reveal">
-      Here are answers to some common questions. Still have one? Reach out!
+      Tukaj so odgovori na nekatera pogosta vprašanja. Imate še kakšno? Pišite nama!
     </p>
 
     <div class="faq-list">
 
       <div class="faq-item reveal">
         <button class="faq-question" aria-expanded="false">
-          When should I arrive?
+          Kdaj naj pridem?
           <span class="faq-icon" aria-hidden="true">+</span>
         </button>
         <div class="faq-answer">
-          <p>Please plan to arrive at least 15–20 minutes before the ceremony begins so we can get started on time. The ceremony begins promptly at 2:00 PM.</p>
+          <p>Prosimo, načrtujte prihod vsaj 15–20 minut pred začetkom obreda, da bova začela pravočasno. Obred se začne točno ob 14:00.</p>
         </div>
       </div>
 
       <div class="faq-item reveal">
         <button class="faq-question" aria-expanded="false">
-          Is there parking at the venues?
+          Je parkirišče na voljo?
           <span class="faq-icon" aria-hidden="true">+</span>
         </button>
         <div class="faq-answer">
-          <p>Yes! Complimentary parking is available at both the ceremony and reception venues. Detailed directions will be shared closer to the date.</p>
+          <p>Da! Brezplačno parkirišče je na voljo na lokaciji. Podrobna navodila bodo posredovana bližje datumu.</p>
         </div>
       </div>
 
       <div class="faq-item reveal">
         <button class="faq-question" aria-expanded="false">
-          Can I bring a plus-one?
+          Lahko pridem s spremljevalcem?
           <span class="faq-icon" aria-hidden="true">+</span>
         </button>
         <div class="faq-answer">
-          <p>Due to our venue capacity, we can only accommodate guests named on the invitation. If your invitation includes a plus-one, it will be noted on the envelope.</p>
+          <p>Zaradi kapacitete prizorišča lahko sprejmeva samo goste, ki so navedeni na vabilu. Če vaše vabilo vključuje spremljevalca, bo to navedeno na kuverti.</p>
         </div>
       </div>
 
       <div class="faq-item reveal">
         <button class="faq-question" aria-expanded="false">
-          Are children welcome?
+          So otroci dobrodošli?
           <span class="faq-icon" aria-hidden="true">+</span>
         </button>
         <div class="faq-answer">
-          <p>We love your little ones, but our wedding is an adults-only event (18+). We hope this gives you a chance to enjoy a relaxing evening out!</p>
+          <p>Ljubiva vaše malčke, a naša poroka je samo za odrasle (18+). Upava, da vam to daje priložnost za sproščen večer!</p>
         </div>
       </div>
 
       <div class="faq-item reveal">
         <button class="faq-question" aria-expanded="false">
-          What food will be served?
+          Kaj bo na meniju?
           <span class="faq-icon" aria-hidden="true">+</span>
         </button>
         <div class="faq-answer">
-          <p>We'll be serving a three-course dinner. Please indicate any dietary restrictions or allergies when you RSVP, and we'll do our best to accommodate everyone.</p>
+          <p>Postregla bova z večerjo s tremi hodi. Prosimo, navedite morebitne prehranske omejitve ali alergije pri prijavi, in potrudila se bova za vse.</p>
         </div>
       </div>
 
       <div class="faq-item reveal">
         <button class="faq-question" aria-expanded="false">
-          Will there be dancing?
+          Bo ples?
           <span class="faq-icon" aria-hidden="true">+</span>
         </button>
         <div class="faq-answer">
-          <p>Absolutely! We'll have a live band and DJ with a full dance floor. Wear comfortable shoes for the reception — the dancing will go late into the night!</p>
+          <p>Seveda! Imela bova živo glasbeno skupino in DJ-ja s polnim plesnim parketom. Oblecite udobne čevlje za slavje — ples bo trajal pozno v noč!</p>
         </div>
       </div>
 
       <div class="faq-item reveal">
         <button class="faq-question" aria-expanded="false">
-          When is the RSVP deadline?
+          Do kdaj je rok za prijavo?
           <span class="faq-icon" aria-hidden="true">+</span>
         </button>
         <div class="faq-answer">
-          <p>Please RSVP by June 15, 2026. This helps us finalise catering and seating arrangements in time.</p>
+          <p>Prosimo, prijavite se do 15. junija 2026. To nama pomaga pravočasno zaključiti catering in razporeditev sedežev.</p>
         </div>
       </div>
 
       <div class="faq-item reveal">
         <button class="faq-question" aria-expanded="false">
-          How can I reach you with more questions?
+          Kako vas lahko kontaktiram z več vprašanji?
           <span class="faq-icon" aria-hidden="true">+</span>
         </button>
         <div class="faq-answer">
-          <p>Feel free to reach out to us directly via email or phone. We're happy to help with any questions you may have before the big day!</p>
+          <p>Kontaktirajte naju neposredno po e-pošti ali telefonu. Z veseljem odgovoriva na vsa vprašanja pred velikim dnem!</p>
         </div>
       </div>
 
@@ -273,8 +220,8 @@
   <footer>
     <span class="footer-hearts">💕</span>
     <h2>Alenka &amp; Domen</h2>
-    <p class="footer-date">August 29, 2026</p>
-    <p class="footer-msg">We can't wait to celebrate with you!</p>
+    <p class="footer-date">29. avgust 2026</p>
+    <p class="footer-msg">Komaj čakava, da praznujeva z vami!</p>
   </footer>
 
   <script src="script.js"></script>
